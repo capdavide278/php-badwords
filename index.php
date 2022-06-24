@@ -1,9 +1,10 @@
-<?php 
+<?php
 
-    $paragrafo ='Oggi è stata una brutta giornata per Genoveffa';
+    $name = $_GET['name'];
 
-   /*  $_GET = [name]; */
+    $nome_censurato = str_replace($name, '***', $name);
 
+    $paragrafo ='Oggi è stata una brutta giornata per'.' '. $nome_censurato;
 
 ?>
 
@@ -19,8 +20,16 @@
     <title>Php</title>
 </head>
 <body>
-    <p>Frase originiraria:</p>
-    <h1><p> <?= $paragrafo ?></p></h1>
-    <div><?= strlen($paragrafo)?></div>
+    <h1>Frase originiraria:</h1>
+    <h2><p> <?= $paragrafo ?></p></h2>
+    <h2><?= strlen($paragrafo)?></h2>
+
+    <form action="" method="get">
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name">
+        <button>Inserisci</button>
+    </form>
+
+    <h2><?= $nome_censurato ?></h2>
 </body>
 </html>
