@@ -2,10 +2,10 @@
 
     $name = $_GET['name'];
 
-    $nome_censurato = str_replace($name, '***', $name);
-
-    $paragrafo ='Oggi è stata una brutta giornata per'.' '. $nome_censurato;
-
+    
+    $paragrafo ='Oggi è stata una brutta giornata per tutti';
+    
+    $nome_censurato = str_replace($name, '***', $paragrafo);
 ?>
 
 
@@ -30,6 +30,9 @@
         <button>Inserisci</button>
     </form>
 
+    <h2><?= $name ?></h2>
+
     <h2><?= $nome_censurato ?></h2>
+    <h2><?= strlen($nome_censurato)?></h2>
 </body>
 </html>
