@@ -1,6 +1,10 @@
 <?php 
 
-    $nome = 'Genoveffa';
+    $paragrafo ='Oggi è stata una brutta giornata per Genoveffa';
+
+    
+   /*  $_GET = [name]; */
+
 
 ?>
 
@@ -17,6 +21,6 @@
 </head>
 <body>
     <p>Frase originiraria:</p>
-    <h1><p> Oggi è stata una giornata veramente di merda per <?= $nome ?></p></h1>
+    <h1><p> <?= $paragrafo ?></p></h1>
 </body>
 </html>
