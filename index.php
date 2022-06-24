@@ -2,7 +2,6 @@
 
     $paragrafo ='Oggi è stata una brutta giornata per Genoveffa';
 
-    
    /*  $_GET = [name]; */
 
 
@@ -22,5 +21,6 @@
 <body>
     <p>Frase originiraria:</p>
     <h1><p> <?= $paragrafo ?></p></h1>
+    <div><?= strlen($paragrafo)?></div>
 </body>
 </html>
